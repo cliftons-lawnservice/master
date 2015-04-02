@@ -1,0 +1,13 @@
+!!!
+%html{:xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}
+    = yield(:meta_tags)
+    %link{rel: "shortcut icon", type: "image/x-icon", href: "/favicon.ico"}
+    = csrf_meta_tags
+    %title= yield(:title)
+    = stylesheet_link_tag "application", :media => "all"
+  %body
+    = render 'partials/header'
+    = yield
+    = render 'partials/footer'
