@@ -5,8 +5,12 @@
     = yield(:meta_tags)
     %link{rel: "shortcut icon", type: "image/x-icon", href: "/favicon.ico"}
     = csrf_meta_tags
-    %title= yield(:title)
+    %title= "Cliftons"
     = stylesheet_link_tag "application", :media => "all"
+    
+    = javascript_include_tag "js/vendor/jquery.js"
+    = javascript_include_tag "js/foundation/foundation.js" 
+    = javascript_include_tag "js/foundation/foundation.topbar.js" 
   %body
     = render 'partials/header'
     = yield
