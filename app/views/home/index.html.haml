@@ -1,7 +1,81 @@
-
-%h1 Clifton's Home Page
-%p
-	What were about?...We get the job done period. No questions. 
-
-
-  
+ 
+.row
+  .large-12.columns
+    .row
+      .large-12.hide-for-small
+        #featured{"data-orbit" => ""}
+          %img{:alt => "slide image", :src => "http://placehold.it/1200x500&text=Slide Image 1"}
+    .row
+      .large-12.columns.show-for-small
+        %img{:src => "http://placehold.it/1200x700&text=Mobile Header"}
+    %br
+      .row
+        .large-12.columns
+          .row
+            .large-4.small-6.columns
+              %h4 Cliftons Home Page
+              %hr
+                .row
+                  .large-1.column
+                    %img{:src => "http://placehold.it/50x50&text=[img]"}
+                  .large-9.columns
+                    %h5
+                      %a{:href => "#"} This Lawn
+                    %h6.subheader.show-for-small Doors at 00:00pm
+                %hr
+                  .hide-for-small
+                    .row
+                      .large-1.column
+                        %img{:src => "http://placehold.it/50x50&text=[img]"}
+                      .large-9.columns
+                        %h5.subheader
+                          %a{:href => "#"} That Lawn
+                    %hr
+                      .row
+                        .large-1.column
+                          %img{:src => "http://placehold.it/50x50&text=[img]"}
+                        .large-9.columns
+                          %h5.subheader
+                            %a{:href => "#"} Yes Lawn
+                      %hr
+                        .row
+                          .large-1.column
+                            %img{:src => "http://placehold.it/50x50&text=[img]"}
+                          .large-9.columns
+                            %h5.subheader
+                              %a{:href => "#"} No Lawn
+            .large-4.small-6.columns
+              %img{:src => "http://placehold.it/300x465&text=Image"}
+            .large-4.small-12.columns
+              %h4 Blog About Us
+              %hr
+                .panel
+                  %h5
+                    %a{:href => "#"} Post Title 1
+                  %h6.subheader
+                    Risus ligula, aliquam nec fermentum vitae, sollicitudin eget urna. Suspendisse ultrices ornare tempor...
+                  %h6
+                    %a{:href => "#"} Read More »
+                .panel.hide-for-small
+                  %h5
+                    %a{:href => "#"} Post Title 2 »
+                .panel.hide-for-small
+                  %h5
+                    %a{:href => "#"} Post Title 3 »
+                %a.right{:href => "#"} Go To Blog »
+      %footer.row
+        .large-12.columns
+          %hr
+            .row
+              .large-6.columns
+                %p © Copyright no one at all. Go to town.
+              .large-6.small-12.columns
+                %ul.inline-list.right
+                  %li
+                    %a{:href => "#"} Link 1
+                  %li
+                    %a{:href => "#"} Link 2
+                  %li
+                    %a{:href => "#"} Link 3
+                  %li
+                    %a{:href => "#"} Link 4
