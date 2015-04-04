@@ -9,6 +9,7 @@ Rails.application.routes.draw do
 
   # Static Page Routes
   match '/about',             to: 'home#about',         :via => [:get], :as => 'about'
+  match '/services',          to: 'home#services',      :via => [:get], :as => 'services'
   match '/contact',           to: 'home#contactUs',     :via => [:get], :as => 'contact'
 
   # Example of regular route:
